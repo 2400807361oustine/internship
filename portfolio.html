@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Portfolio</title>
+  <link rel="icon" href="my pass.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+  <!-- NAV bar  -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-bracket"></span>Mugeni Oustine<span class="brand-bracket"></span>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home"       class="nav-link" data-section="home">Home</a></li>
+      <li><a href="#about"      class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills"     class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#academic"   class="nav-link" data-section="academic">Academic</a></li>
+      <li><a href="#contact"    class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--  HOME  -->
+  <section id="home" class="section section--hero">
+    <div class="hero-content">
+      <h1 class="hero-name"> <span class="accent">Mugeni Oustine</span></h1>
+      <p class="hero-tagline">Software Developer &amp; Computer Science Student</p>
+      <p class="hero-sub">Never afraid of encountering errors but motivated by solving errors, That is what a developer is!</p>
+      <div class="hero-cta">
+        <a href="#about"   class="btn btn--primary">About</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-code-block" aria-hidden="true">
+      <div class="code-window">
+        <div class="code-dots">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+        </div>
+        <pre class="code-snippet"><code><span class="kw">const</span> <span class="var">oustine</span> = {
+  <span class="key">name</span>:     <span class="str">"Mugeni Oustine"</span>,
+  <span class="key">role</span>:     <span class="str">"CS Student"</span>,
+  <span class="key">skills</span>:   [<span class="str">"Python"</span>, <span class="str">"C"</span>, <span class="str">"C++"</span>,
+              <span class="str">"JavaScript"</span>, <span class="str">"PHP"</span>],
+  <span class="key">passion</span>:  <span class="str">"software development"</span>,
+  <span class="key">status</span>:   <span class="str">"Open to opportunities"</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section--about">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-placeholder">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="30" r="18" fill="#00D4D8" opacity="0.3"/>
+                
+              </svg>
+              <span class="avatar-initials"><img src="my pass.jpg" alt="" width="179px" height="179px"></span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-lead">I'm a passionate computer science student at <strong>Kyambogo University</strong>, motivated by the art of writing software that solves the identified problem.</p>
+          <p>From low-level systems programming in C and C++ to building dynamic web experiences with JavaScript and PHP, I enjoy working across the full stack (back and front end). Designing a software needs identifying the software required, gathering the rquirements, requirements analysis and specification, system design and prototyping, software development and unit testing, software integration and system testing and finaly deployment and maintenance</p>
+          <p>A day without writing a code is a day wasted.</p>
+          <p>" IF WISHES WERE HORSES, BEGGERS WOULD RIDE "</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">5</span>
+              <span class="stat-label">Languages</span>
+            </div> <!--
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Projects</span>
+         </div> --> 
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section--skills">
+    <div class="container">
+      <h2 class="section-title">Programming <span class="accent">Skills</span></h2>
+      <p class="section-sub">Languages I work with and my proficiency level in each.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card" data-lang="python">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4C13 4 14 9 14 9v5h10v2H10S4 15.5 4 24s5 9 5 9h3v-4.5S11.5 24 15 24h17s4-.5 4-4V13S36.5 4 24 4zm-3 4.5c1.4 0 2.5 1.1 2.5 2.5S22.4 13.5 21 13.5 18.5 12.4 18.5 11s1.1-2.5 2.5-2.5z" fill="#3776AB"/>
+                <path d="M24 44C35 44 34 39 34 39v-5H24v-2h14s6 .5 6-9-5-9-5-9h-3v4.5S37.5 24 34 24H17s-4 .5-4 4v8S12.5 44 24 44zm3-4.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z" fill="#FFD43B"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-name">Python</h3>
+              <p class="skill-desc">Data analysis, scripting, automation, algorithms</p>
+            </div>
+            <span class="skill-pct" data-pct="85">40%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="85"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Flask</span><span class="tag">OOP</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-lang="c">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" fill="#283593"/>
+                <text x="24" y="31" text-anchor="middle" font-size="20" font-weight="700" fill="white" font-family="serif">C</text>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-name">C</h3>
+              <p class="skill-desc">Systems programming, memory management, OS concepts</p>
+            </div>
+            <span class="skill-pct" data-pct="80">50%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="80"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Pointers</span><span class="tag">Structs</span><span class="tag">File I/O</span><span class="tag">Algorithms</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-lang="cpp">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" fill="#1565C0"/>
+                <text x="21" y="31" text-anchor="middle" font-size="15" font-weight="700" fill="white" font-family="serif">C++</text>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-name">C++</h3>
+              <p class="skill-desc">OOP, templates, STL, competitive programming</p>
+            </div>
+            <span class="skill-pct" data-pct="78">70%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="78"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Classes</span><span class="tag">STL</span><span class="tag">Inheritance</span><span class="tag">Templates</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-lang="js">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="4" fill="#F7DF1E"/>
+                <text x="27" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#323330" font-family="sans-serif">JS</text>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-name">JavaScript</h3>
+              <p class="skill-desc">DOM manipulation, async programming, web apps</p>
+            </div>
+            <span class="skill-pct" data-pct="75">15%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="75"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">ES6+</span><span class="tag">DOM</span><span class="tag">Fetch API</span><span class="tag">Node.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-lang="php">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="24" cy="24" rx="22" ry="12" fill="#8892BF"/>
+                <text x="24" y="29" text-anchor="middle" font-size="14" font-weight="700" fill="white" font-family="sans-serif">PHP</text>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-name">PHP</h3>
+              <p class="skill-desc">Server-side scripting, MySQL integration, web backends</p>
+            </div>
+            <span class="skill-pct" data-pct="70">50%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="70"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">MySQL</span><span class="tag">Forms</span><span class="tag">Sessions</span><span class="tag">REST</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIC  -->
+  <section id="academic" class="section section--academic">
+    <div class="container">
+      <h2 class="section-title">Academic <span class="accent">Background</span></h2>
+      <p class="section-sub">ACADEMIC QUALIFICATIONS</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge">Current</div>
+            <h3 class="timeline-title">Bachelor of information Technology and Computing</h3>
+            <p class="timeline-institution">Kyambogo University — School of Computing and Information Science</p>
+            <p class="timeline-period">2024 – Present &nbsp;|&nbsp; Kampala, Uganda</p>
+            <ul class="timeline-courses">
+              <li>Internet Technology</li>
+              <li>Object-Oriented Programming (C++)</li>
+              <li>Database Management Systems</li>
+              <li>Software Engineering</li>
+              <li>Research Methods in Computing</li>
+              <li>Operating Systems &amp; Networks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3 class="timeline-title">Uganda Advanced Certificate of Education (A-Level)</h3>
+            <p class="timeline-institution">Busia Secondary School</p>
+            <p class="timeline-period">2022 – 2023</p>
+            <p class="timeline-note">Subjects: Mathematics, Physics, Entrepreneurship &nbsp;|&nbsp; Grade: <strong>3 Principals</strong></p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3 class="timeline-title">Uganda Certificate of Education (O-Level)</h3>
+            <p class="timeline-institution">Masinya Secondary School</p>
+            <p class="timeline-period">2017 – 2020</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="certifications">
+        <h3 class="cert-title">Certifications &amp; Achievements</h3>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <span class="cert-icon">🏆</span>
+            <p>Dean's List — Academic Excellence</p>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">📜</span>
+            <p>Python for Everybody — Coursera</p>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">📜</span>
+            <p>Web Development Fundamentals</p>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">🎯</span>
+            <p>Hackathon Participant 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <div class="container">
+      <h2 class="section-title"> <span class="accent">link up</span></h2>
+      <p class="section-sub">Whether it's a project, opportunity, or just a hello — my inbox is open.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:yourname@students.mak.ac.ug" class="contact-value">2400807361@std.kyu.ac.ug</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:+256757199373" class="contact-value">+256 757199373</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Location</p>
+              <span class="contact-value">Kampala, Uganda</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="contact-value">github.com/mugenioustine-cmd</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" class="contact-value">linkedin.com/in/mugrnioustine</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Mugeni Oustine" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="mugenioustine@gmail.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+        <p>Designed &amp; Built by <span class="accent">mugeni oustine</span></p>
+    <p class="footer-sub">Kyambogo University · School of Computing &amp; Information science</p>
+    </div>
+    <div>
+      <a href=""></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
